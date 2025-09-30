@@ -968,6 +968,46 @@
 
 
 
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+  padding: 10px 0;
+}
+
+.marquee-content {
+  display: inline-flex;
+  gap: 50px;
+  animation: scroll 30s linear infinite;
+  white-space: nowrap;
+  align-items: center;
+}
+
+/* Infinite loop keyframes */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Partner logos */
+.partner-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Supplier names */
+.supplier-name {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  padding: 6px 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
 
 
 
